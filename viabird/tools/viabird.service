@@ -1,0 +1,12 @@
+[Unit]
+Description=Viabird Service
+
+[Service]
+Type=simple
+WorkingDirectory={{ PATH }}
+ExecStart={{ PATH }}/run.sh
+Restart=on-failure
+User=root
+
+[Install]
+WantedBy=multi-user.target
